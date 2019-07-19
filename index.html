@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.tjbda.cn:8080/bd/member/index -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="http://www.tjbda.cn:8080/styles/member/images/favicon.ico" mce_href="http://www.tjbda.cn:8080/styles/member/images/favicon.ico" type="image/x-icon">
+
+<title>数据开发者平台</title>
+<meta name="keywords" content="数据开发者平台">
+<meta name="description" content="数据开发者平台">
+<link rel="stylesheet" type="text/css" href="./css/hikcss.css">
+<link rel="stylesheet" type="text/css" href="./css/activity.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/styleActivi.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/styleApp.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet" type="text/css" href="./css/RjdaoIcon.css">
+
+<link rel="stylesheet" href="./css/layer.css" id="layui_layer_skinlayercss" style="">
+<link id="layuicss-laydate" rel="stylesheet" href="./css/laydate.css" media="all">
+<link id="layuicss-layer" rel="stylesheet" href="./css/layer(1).css" media="all">
+<link id="layuicss-skincodecss" rel="stylesheet" href="./css/code.css" media="all">
+<link rel="stylesheet" type="text/css" href="./css/login.css">
+<link rel="stylesheet" type="text/css" href="./css/register.css">
+<link rel="stylesheet" type="text/css" href="./css/layui.css">
+</head>
+<body>
+<!----header s---->
+
+<div id="topAnchor"></div>
+<header class="w">
+	<input type="hidden" value="http://www.tjbda.cn:8080/" id="ctx">
+    <a href="http://www.tjbda.cn:8080/" class="logo" style="width:370px">
+        <img style="width:250px; height:56px; margin-top:10px" src="./image/logo.png">
+        <span style="font-size: 12px;display: inline-block;float: right;margin-top: 32px;">·海康威视AI开发平台</span>
+    </a>
+	    <a href="javascript:void(0)" onclick="showRegister()" class="topbut">注册</a>
+        <a href="javascript:void(0)" onclick="showBox()" class="topbut-cur">登录</a>
+    <nav>
+        <!-- cur -->
+    	<a href="http://www.tjbda.cn:8080/" class="">首页</a>  
+        <a href="http://www.tjbda.cn:8080/bd/member/index#">论坛交流</a>
+        <a href="http://www.tjbda.cn:8080/bd/inters/index" class="">数据接口</a>
+        <a href="http://www.tjbda.cn:8080/bd/apps/index" class="">应用</a>
+        <a href="http://www.tjbda.cn:8080/bd/activity/index" class="">活动资讯</a>
+    </nav>
+</header>
+<!----header e---->
+<!--focus start-->
+<div class="focus" id="focus">
+    <div class="focus_s">
+        <ul><li class="">
+            <b></b>
+        </li><li class="">
+            <b></b>
+        </li><li class="active"><b></b></li></ul>
+    </div>
+    <div class="login_box w" style="display:none;">
+		<div class="login">
+        	<div class="title">数据开发者平台</div>
+            <div class="nllv">震撼上市</div>
+            <div class="txt"></div>
+            <a onclick="shoenlistDiv(this)" pronum="7" class="jiabut">立即注册</a>
+            <div class="txt" style="margin-top:20px;color:#333;"></div>
+		</div>
+	</div>
+    
+	<div id="focus_m" class="focus_m">
+		<ul style="opacity: 1;">
+			<li class="li_1" style="background: url(&quot;https://tjbda.oss.cn-north-3.inspurcloudoss.com/devplat/f32edd9962b39ff2c86f190c928bfeec.jpg&quot;) center 0px no-repeat rgb(40, 140, 192); display: none;"><a href="http://www.tjbda.cn:8080/bd/member/index#" hidefocus="true"></a></li>
+			<li class="li_2" style="background: url(&quot;http://www.tjbda.cn:8080/styles/member/banners/banner2.jpg&quot;) center 0px no-repeat rgb(118, 183, 216); display: none;"><a href="http://www.tjbda.cn:8080/bd/member/index#" hidefocus="true"></a></li>
+			<li class="li_3" style="background: url(&quot;http://www.tjbda.cn:8080/styles/member/banners/banner3.jpg&quot;) center 0px no-repeat rgb(118, 183, 216); display: block;"><a href="http://www.tjbda.cn:8080/bd/member/index#" hidefocus="true"></a></li>
+		</ul>
+	</div>
+	<a href="javascript:;" class="focus_l" id="focus_l" hidefocus="true" title="上一张"><b></b><span></span></a>
+	<a href="javascript:;" class="focus_r" id="focus_r" hidefocus="true" title="下一张"><b></b><span></span></a>
+</div>
+<!--focus end-->
+<!--活动资讯 -->
+<!-- <div id="news">
+  <div class="container">
+    <div class="home_top wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+      <h3>活动资讯</h3>
+      <span></span></div>
+    <div class="news_con">
+      <div class="row"> 
+      
+      <div class="news_item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="news_item_box">
+            <div class="news_item_time"><span class="a">29</span><span class="b">
+            2019-04</span></div>
+            <div class="news_item_right">
+              <div class="news_item_title"><a href="http://www.tjbda.cn:8080/bd/activity/detail/1d6bb4e552a7417c820e95727742083b">天津市委网信办召开理论学习中心组学习扩大会议</a></div>
+              <div class="news_item_des">  4月22日，市委网信办召开理论学习中心组学习扩大会议暨“天津网信大讲堂”第二课，集中学习习近平总书记在中共中央政治局第十四次集体学习时的重要讲话精神</div>
+            </div>
+          </div>
+        </div>
+        
+      <div class="news_item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="news_item_box">
+            <div class="news_item_time"><span class="a">29</span><span class="b">
+            2019-04</span></div>
+            <div class="news_item_right">
+              <div class="news_item_title"><a href="http://www.tjbda.cn:8080/bd/activity/detail/7ef5034bd99b4e3db48fdd6dbd915d7c">世界智能大会</a></div>
+              <div class="news_item_des">世界智能大会第三届世界智能大会将于2019年5月16日-19日在天津梅江会展中心举行，在联合国教科文组织、世界工程组织联合会等支持下，由国家发展和改革委员会、科学技术部、工业和信息化部、国家广播电视总局、国家互联网信息办公室、中国科学院、中国工程院、中国科学技术协会、天津市人民政府共同主办</div>
+            </div>
+          </div>
+        </div>
+        
+      <div class="news_item wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+          <div class="news_item_box">
+            <div class="news_item_time"><span class="a">29</span><span class="b">
+            2019-04</span></div>
+            <div class="news_item_right">
+              <div class="news_item_title"><a href="http://www.tjbda.cn:8080/bd/activity/detail/844d3ab8bfe2482a9dc0a352d23a1f74">一年前的此时，中兴被美国禁售，现在中兴怎么样了</a></div>
+              <div class="news_item_des">中兴受到了来自美国商务部发出的禁售令，禁止美国企业向中兴销售零部件、软件、商品和技术，持续时间7年，这一禁售令首先是荒唐的，但对中兴来说也是致命的</div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+</div> 
+</div> -->
+<!-- 活动资讯end -->
+<!-- <div class="container">
+<div class="SD_box SD_box_none">
+        <div class="fl bg  pr15 pb15" style="width:49%; overflow:hidden">
+            <div class="SD_box_1 SD_box_1_1">
+                <div class="SD_box_1_title">
+                    应用排行                </div>
+                <div class="SD_box_1_more">
+                    <a href="http://www.tjbda.cn:8080/bd/apps/index"> 更多&gt;</a>                
+                </div>
+            </div>
+			<ul class="uselist">
+			
+                <li><img src="./image/022ab316221642cb88bbb3a4cbb979eb.png">
+                	<div style="float:right; overflow:hidden; width:80%">
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/c55433db0ea2420193d099d3e9b73e85" class="title">天津政务app<span class="time">2019-04-29</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/c55433db0ea2420193d099d3e9b73e85" class="content">“天津政务”手机应用程序，市民随身携带的政务大厅，让政务办事更简单、更及时、更便捷！
+                      政务办事、智慧警务、交通出行、综合服务、社会保障五大功能模块
+                    </a>
+                    </div>
+                </li>
+             
+                <li><img src="./image/6d20df7c51b144d89703b9799eb768c4.png">
+                	<div style="float:right; overflow:hidden; width:80%">
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/2093ae4d525c497ab2d26b95a4c7fbad" class="title">奏耐天津<span class="time">2019-04-29</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/2093ae4d525c497ab2d26b95a4c7fbad" class="content">奏耐天津是一款天津本土资讯、生活服务类应用。立志成为天津移动资讯门户，为天津人呈现真实，精彩的互联网生活。
+                      每天发布及时的天津资讯，关注天津人的衣食住行，吃喝玩乐，购物等资讯，融合高速发展无线技术，打造便捷的未来移
+                    </a>
+                    </div>
+                </li>
+             
+                <li><img src="./image/869adc42565a4dcfa610472858c0a48b.png">
+                	<div style="float:right; overflow:hidden; width:80%">
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/667404614bf44b3abc0120fada34defd" class="title">天津地铁<span class="time">2019-04-29</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/apps/detail/667404614bf44b3abc0120fada34defd" class="content">天津地铁官方APP正式上线啦。有了这款地铁出行APP，您无需先购票再乘车，登录天津地铁APP，实名绑卡后生成专属乘车码，对准闸机“二维码扫码口”轻轻一扫，就可以轻松进出站，而且是先乘车后付费哦~
+贴心的地铁信息查询功能</a>
+                    </div>
+                </li>
+             
+            </ul>
+        </div>
+        <div class="fr bg pl15 pr15 pb15" style="width:49%; overflow:hidden">
+            <div class="SD_box_1 SD_box_1_1">
+                <div class="SD_box_1_title">
+                    数据接口                </div>
+                <div class="SD_box_1_more">
+                    <a href="http://www.tjbda.cn:8080/bd/inters/index"> 更多&gt;</a></div>
+            </div>
+			<ul class="newlist">
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/xinyongfw/index.htm">信用服务</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/yiliaows/index.htm">医疗卫生</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/shebaojy/index.htm">社保就业</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/gonggongaq/index.htm">公共安全</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/chengjianzf/index.htm">城建住房</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/jiaotongys/index.htm">交通运输</a></li>
+               <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/jiaoyuwh/index.htm">教育文化</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/kejicx/index.htm">科技创新</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/ziyuanny/index.htm">资源能源</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/shengtaihj/index.htm">生态环境</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/gongyeny/index.htm">工业农业</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/shangmaolt/index.htm">商贸流通</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/caishuijr/index.htm">财税金融</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/anquansc/index.htm">安全生产</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/shichangjg/index.htm">市场监管</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/falvfw/index.htm">法律服务</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/shenghuofw/index.htm">生活服务</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/dilikj/index.htm">地理空间</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/zt/jigoutt/index.htm">机构团体</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjjk/sjjkzt/shjzp/index.htm">社会救助</a></li>
+                
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sfzggwa/index.htm">市发展改革委</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sgyhxxhjb/index.htm">市工业和信息化局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sswjc/index.htm">市商务局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/skjje/index.htm">市科技局</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sjwd/index.htm">市教委</a></li>
+
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/smzzjwf/index.htm">市民族宗教委</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/szfcxjswg/index.htm">市住房城乡建设委</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/ssfjg/index.htm">市司法局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sczjh/index.htm">市财政局</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/snwk/index.htm">市农委</a></li>
+
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/swjwl/index.htm">市卫生健康委</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/sjgswgljs/index.htm">市机关事务管理局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjjk/sjjkbm/sajjr/index.htm">市应急局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjjk/sjjkbm/ssjjm/index.htm">市审计局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/swbn/index.htm">市外办</a></li>
+
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjjk/sjjkbm/sjtyswo/index.htm">市交通运输委</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/eb81eec27f5a4a2092cd21a2e4ae1143/index.htm">市粮食和物资局&nbsp;</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/stjjp/index.htm">市统计局</a></li>
+                <li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/styjq/index.htm">市体育局</a></li>
+				<li><a target="_blank" href="https://data.tj.gov.cn/sjj/bm/10970d637f6f45309f3dc32fa67de098/index.htm">市监狱局</a></li>
+                
+            </ul>
+        </div>
+</div>
+</div>
+<div class="container">
+    <div class="home_top wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+      <h3>论坛</h3>
+    </div>
+    <div class="forum_con">
+    	<div class="SD_box SD_box_none">
+        <div class="fl bg  pr15 pb15" style="width:65%; overflow:hidden">
+            <div class="SD_box_1 SD_box_1_1">
+                <div class="SD_box_1_title">帖子</div>
+                <div class="SD_box_1_more"><a href="http://www.tjbda.cn:8080/bd/member/bbs/forumList.html"> 更多&gt;</a></div>
+            </div>
+			<ul class="forumlist">
+			
+            </ul>
+        </div>
+        <div class="fr bg pl15 pr15 pb15" style="width:32%; overflow:hidden">
+            <div class="SD_box_1 SD_box_1_1">
+                <div class="SD_box_1_title">论坛                </div>
+                <div class="SD_box_1_more"><a href="http://www.tjbda.cn:8080/bd/member/bbs/forumList.html"> 更多&gt;</a>                </div>
+            </div>
+			<ul class="postlist">
+			
+                <li><img src="./image/1e8a67197d2e4d1ca076fb31a210c859.png">
+                	<div style="float:right; overflow:hidden; width:68%">
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="title">java<span class="time">2019-04-26</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="content">
+                    	Java
+                    </a>
+                    </div>
+                </li>
+            
+                <li><img src="./image/ad369b3cea5548888b71c28531cf55a2.png">
+                	<div style="float:right; overflow:hidden; width:68%">
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="title">大数据<span class="time">2019-04-26</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="content">
+                    	大数据
+                    </a>
+                    </div>
+                </li>
+            
+                <li><img src="./image/49eefb046bc146539ae54c3ba5e33634.png">
+                	<div style="float:right; overflow:hidden; width:68%">
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="title">区块链<span class="time">2019-04-26</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="content">
+                    	区块链
+                    </a>
+                    </div>
+                </li>
+            
+                <li><img src="./image/da1a6afb31f1480593cf49538f1c5ec5.png">
+                	<div style="float:right; overflow:hidden; width:68%">
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="title">物联网<span class="time">2019-04-26</span></a>
+                    <a href="http://www.tjbda.cn:8080/bd/member/index#" class="content">
+                    	物联网
+                    </a>
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+    	</div>
+        
+</div></div> -->
+<!-- 标题 -->
+<div class="portal-ai__advantage portal-gray"  style="background-color: rgba(66,133,244,.85);">
+    <div class="portal-wrap portal-intro" >
+        <div class="portal-intro__header"  style="text-align: center;padding-top: 0px;">
+            <h3 class="portal-intro__title"  style="font-size: 45px">视频AI训练</h3>
+        </div>
+    </div>
+</div>
+<!-- 应用 -->
+<div class="portal-ai__scenarios" id="aiScenarios">
+    <div class="portal-wrap portal-intro">
+        <div class="portal-intro__header">
+            <h3 class="portal-intro__title">应用场景</h3><!---->
+        </div>
+        <div class="portal-transparent">
+            <ul class="portal-transparent__list">
+                <li class="portal-transparent__item--wrap">
+                    <div class="portal-transparent__item portal-img__loading">
+                        <img src="./image/ai_scenarios01.bcfafd80.jpg" class="portal-transparent__img">
+                       <div class="portal-transparent__item--hover">
+                            <h3 class="portal-transparent__title">图像分类模型</h3>
+                            <p class="portal-transparent__label">图像分类模型，快速识别一张图片中是否含有指定物体、状态或者场景。</p>
+                         </div>
+                   </div>
+                </li>
+                <li class="portal-transparent__item--wrap">
+            <div class="portal-transparent__item portal-img__loading">
+                <img src="./image/ai_scenarios02.a7ed716f.jpg" class="portal-transparent__img">
+                <div class="portal-transparent__item--hover">
+                    <h3 class="portal-transparent__title">物体检测模型</h3>
+                    <p class="portal-transparent__label">定制识别出图片里每个物体的位置和标记点名称。适用于识别图片中有多个物体的场景特点。</p>
+                </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 训练类型 -->
+<div class="portal-ai__trainer portal-gray" id="aiTraining">
+    <div class="portal-wrap portal-intro">
+        <div class="portal-intro__header">
+            <h3 class="portal-intro__title">训练类型</h3><!---->
+        </div>
+        <div class="portal-transparent">
+            <ul class="portal-transparent__list">
+                <li class="portal-transparent__item--wrap">
+                    <div class="portal-transparent__item portal-img__loading">
+                        <img src="./image/ai_train_api.47378f95.jpg" class="portal-transparent__img">
+                        <div class="portal-transparent__item--hover">
+                            <h3 class="portal-transparent__title">在线API</h3>
+                            <p class="portal-transparent__label">可提供企业级稳定、精确的大流量服务，拥有毫秒级别响应能力、弹性灵活的高并发承载及99%的可靠性保障。</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="portal-transparent__item--wrap">
+                    <div class="portal-transparent__item portal-img__loading">
+                        <img src="./image/ai_train_nvr.307c908f.png" class="portal-transparent__img">
+                        <div class="portal-transparent__item--hover">
+                            <h3 class="portal-transparent__title">智能IPC和NVR</h3>
+                            <p class="portal-transparent__label">可以通过萤石云批量发布到支持算法发布的海康摄像机或NVR上，让其拥有识别万物的能力。（仅支持部分定制型号，详情咨询客服)</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>   
+</div>
+<!-- 合作案例 -->
+<div id="aiCase" class="portal-ai__case--wrap">
+    <div class="portal-wrap">
+        <div class="portal-intro__header">
+            <h3 class="portal-intro__title">合作案例</h3>
+        </div>
+        <div class="portal-ai__case">
+            <video preload="true" controls="controls" poster="./image/video_cover_case.012f74f0.jpg">
+                <source src="https://saas-face-data-bucket.oss-cn-hangzhou.aliyuncs.com/saasportal/aiCase.mp4" type="video/mp4">
+                <embed src="https://saas-face-data-bucket.oss-cn-hangzhou.aliyuncs.com/saasportal/aiCase.mp4" type="application/x-shockwave-flash" allowscriptaccess="true" allowfullscreen="true">
+            </video>
+        </div>
+    </div>
+</div>
+<!-- 核心优势 -->
+<div class="portal-ai__advantage portal-gray" id="aiAdvantage">
+    <div class="portal-wrap portal-intro">
+        <div class="portal-intro__header">
+            <h3 class="portal-intro__title">核心优势</h3><!---->
+        </div>
+        <div class="portal-card">
+            <ul class="portal-card__list">
+                <li class="portal-card__item--row portal-card__item--row4">
+                    <div class="portal-card__item"><div class="portal-card__item--inner">
+                        <div class="portal-card__img portal-img__loading">
+                            <img src="./image/img_time.5cf84208.jpg"></div>
+                            <div class="portal-card__info">
+                                <h6 class="portal-card__title">AI立等可取</h6>
+                                <p class="portal-card__label">0算法基础，五步定制AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portal-card__item--row portal-card__item--row4">
+                    <div class="portal-card__item">
+                        <div class="portal-card__item--inner">
+                            <div class="portal-card__img portal-img__loading">
+                                <img src="./image/img_flexible.bc829961.jpg">
+                            </div><div class="portal-card__info">
+                                <h6 class="portal-card__title">发布随心所欲</h6>
+                                <p class="portal-card__label">可发布至云端，也可发布到IPC或NVR</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portal-card__item--row portal-card__item--row4">
+                    <div class="portal-card__item"><div class="portal-card__item--inner">
+                        <div class="portal-card__img portal-img__loading">
+                            <img src="./image/img_accuracy.4cf51a03.jpg">
+                        </div>
+                        <div class="portal-card__info">
+                            <h6 class="portal-card__title">精度业内领先</h6>
+                            <p class="portal-card__label">超过70%的算法模型的准确率&gt;90%</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="portal-card__item--row portal-card__item--row4">
+                <div class="portal-card__item">
+                    <div class="portal-card__item--inner">
+                        <div class="portal-card__img portal-img__loading">
+                            <img src="./image/img_safe.30941873.jpg">
+                        </div><div class="portal-card__info">
+                            <h6 class="portal-card__title">安全毋庸置疑</h6>
+                            <p class="portal-card__label">金融级安全，保护您的数据和服务调用接口</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 文档介绍 -->
+<div  class="portal-ai__case--wrap">
+        <div class="portal-wrap">
+            <div class="portal-intro__header"  style="padding-bottom: 0px;">
+                <h3 class="portal-intro__title">平台介绍</h3>
+            </div>
+            <div class="">
+                    <div class="news_title">什么是AI开放平台</div> 
+
+                    <div class="news_detail">
+                        AI开放平台是海康威视针对各行业的场景化视觉感知需求，面向行业用户与生态合作伙伴打造的一站式算法定制服务平台。AI开放平台提供了 <span class="color333">数据管理、数据标注、模型训练、模型部署</span> 等核心服务能力，结合海康行业应用平台和云眸平台，分别满足私有化和互联网场景下视频联网、AI模型管理、AI应用的需求，从而覆盖需求产生到应用落地的完整流程。
+                    </div> 
+                    <div class="news_detail">
+                           目前海康AI开放平台支持<span class="color333"> 图像分类、物体检测、检测+分类混合分析</span>等三类应用。
+                    </div> 
+                    <div class="news_detail"> <span class="color333"> 图像分类：</span> 快速识别一张图片中是否含有指定物体、状态或者场景； </div> 
+                    <div class="news_detail"> <span class="color333"> 物体检测：  </span>  定制识别出图片里每个物体的位置和标记点名称，适用于识别图片中有多个物体的场景特点。 </div> 
+                    <div class="news_detail"> <span class="color333"> 检测+分类混合分析： </span>定制识别出图片里每个物体的位置和标记点名称，并进一步识别该物体的多个属性。 </div> <br>
+        
+
+
+
+                    <div class="news_title">平台优势</div> 
+                    <div  class="news_detail">1.提供基于高性能计算平台的算法模型自动化训练服务， <span class="color333">显著缩短AI应用开发周期，满足应用快速上线的需求；</span></div> 
+                    <div  class="news_detail">2.支持业界领先的 <span class="color333">将算法模型直接导入边缘设备技术，</span>使边缘设备具备灵活的场景适应性。目前支持的设备包括多形态摄像机产品系列、“超脑”智能NVR系列；</div> 
+                    <div  class="news_detail">3.提供平台级SDK和云端API与企业应用实现集成，解决AI视觉感知应用“最后一公里”问题， <span class="color333">并在生产环境中实现数据持续采集和算法模型迭代优化的闭环反馈。</span></div> 
+                    
+                    
+                    
+                    ￼<div class="news_title">服务流程</div> 
+                    <div class="news_detail"> <span class="color333">数据准备：</span> 通过摄像机采集符合模型训练要求的场景图片素材，起步要求100张。</div>                     
+                    <div class="news_detail"> <span class="color333">数据标注：</span> 对于图片分类任务，为图片素材创建分类和绘制感兴趣区域；对于物体检测任务，通过标注工具对图片中的目标物体进行框选和标记。  </div>                   
+                    <div class="news_detail"> <span class="color333">模型训练：</span> 创建训练任务，将标注完成的图片导入训练任务，进行自动化模型训练。</div>                     
+                    <div class="news_detail"> <span class="color333">模型校验：</span> 导入用于校验的图片素材对训练生成的模型进行初步校验，校验完成后可进行模型发布。 </div> 
+                    <div class="news_detail"> <span class="color333">模型部署：</span> 可将校验完成的模型发布到萤石云，生成云端推理服务；或下载模型并通过行业应用平台/云眸部署到摄像机或“超脑”NVR中，用于边缘推理。</div> 
+            </div>
+        </div>
+</div>
+<!-- 跳转页面 -->
+<div class="portal-ai__advantage portal-gray" >
+        <div class="portal-wrap portal-intro">
+            <div class="portal-intro__header" style="text-align: center;    padding-top: 30px;">
+                <a href="https://es.ys7.com/portal/ai"  class="bottombut-cur">
+                      开始数据训练服务
+                    <div style="font-size:12px">需登录注册</div>
+                </a>
+            </div>            
+</div>
+<!---footer s--->
+<div class="portal-up"><a  href="#topAnchor"   class="portal-up__btn"><i class="portal-up__icon"></i></a></div>
+<footer >
+	<div class="fmain w">
+        <div class="fm-bot">
+            <span>© 2019 &nbsp;天津市大数据协会 &nbsp;京ICP备：00000000号 </span>
+        </div>
+    </div>
+</footer>
+<style>
+        input::-webkit-input-placeholder{
+            color:#C0C0C0;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#C0C0C0;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#C0C0C0;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#C0C0C0;
+        }
+    </style>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/layer.js"></script>
+<script type="text/javascript" src="./js/layui.all.js"></script>
+<script type="text/javascript" src="./js/login.js"></script>
+<script type="text/javascript" src="./js/register.js"></script>
+<script type="text/javascript" src="./js/forgetPassword.js"></script>
+<script type="text/javascript">
+function myReload(){
+	$("#refCode_login_img").attr('src', 'http://www.tjbda.cn:8080/bd/userManage/kaptcha?' + Math.floor(Math.random() * 100));
+}
+
+function myRegisterReload(){
+	$("#refCode_reg_img").attr('src', 'http://www.tjbda.cn:8080/bd/userManage/kaptcha?' + Math.floor(Math.random() * 100));
+}
+
+function myForgetReload(){
+	$("#refCode_forget_img").attr('src', 'http://www.tjbda.cn:8080/bd/userManage/kaptcha?' + Math.floor(Math.random() * 100));
+}
+
+</script>
+<input type="hidden" id="login" value="">
+<div class="video_mask" id="login_box" style="display: none;">
+	<div class="bg_color" onclick="deleteFilter()" id="bg_filter" style="display: block;"></div>
+	<div carousel-item="">
+		<div class="carousel_div1"></div>
+		<div class="carousel_div2"></div>
+		<div class="carousel_div3"></div>
+	</div>
+	<div class="login layui-anim layui-anim-up">
+		<div class="layui-logo">
+		</div>
+		<fieldset class="layui-elem-field layui-field-title">
+			<legend class="text-white" style="color:#003686; font-weight:bold; font-size:20px; border-bottom:1px solid  #ccc">平台登录</legend>
+		</fieldset>
+		<form name="loginForm" action="http://www.tjbda.cn:8080/bd/member/index" method="post">
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<input type="text" id="username" lay-verify="required|account" maxlength="20" data-name="手机号" placeholder="请输入手机号" autocomplete="off" autofocus="" class="layui-input">
+				</div>
+				<div class="layui-form-item">
+					<input type="password" id="userpwd" lay-verify="required" maxlength="20" data-name="密码" placeholder="请输入密码" autocomplete="off" class="layui-input">
+				</div>
+				<div class="layui-form-item form_code">
+					<input style="width:230px" type="text" id="validcode" lay-verify="required|code" data-name="验证码" maxlength="6" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+					<div class="code"><img onclick="myReload()" id="refCode_login_img" width="118" height="38" src="http://www.tjbda.cn:8080/bd/member/index"></div>
+				</div>
+				<strong id="login-error" style="color:red"></strong>
+				<button class="login_btn layui-btn layui-btn-radius layui-btn-normal" type="button" onclick="ajaxLogin()">登录</button>
+				<strong class="text-white" style="color:#333">还没有账号？ <a href="javascript:void(0);" onclick="showRegister()" style="color: cornflowerblue;">立即注册»</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="showForget()" style="color: cornflowerblue;">找回密码»</a>
+				</strong>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="user" id="register_box" style="display: none;">
+<div class="bg_color" onclick="deleteFilter()" id="bg_reg_filter" style="display: block;"></div>
+<div class="layui-clear register_main">
+	<div class="layui-logo">
+		
+	</div>
+	<fieldset class="layui-elem-field layui-field-title">
+		<legend class="text-white" style="color:#fac300; font-weight:bold; font-size:20px; border-bottom:1px solid  #ccc">平台注册</legend>
+	</fieldset>
+	<div class="layui-form layui-form-pane">
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<input class="layui-input" id="phone" placeholder="请输入手机号" type="text" maxlength="11" lay-verify="required|phone" autofocus="" autocomplete="off">
+			</div>
+			<div class="layui-form-item">
+				<input class="layui-input" id="password" placeholder="请输入密码,长度不小于8位" type="password" maxlength="20" lay-verify="required|pwd" autocomplete="off">
+			</div>
+			<div class="layui-form-item">
+				<input class="layui-input" placeholder="请再次输入密码,长度不小于8位" id="password-confirm" type="password" maxlength="20" lay-verify="required|rePwd" autocomplete="off">
+			</div>
+			<div class="layui-form-item form_code">
+				<input id="code" class="layui-input" placeholder="请输入图片验证码" type="text" maxlength="6" lay-verify="required">
+				<div class="code"><img id="refCode_reg_img" onclick="myRegisterReload()" src="http://www.tjbda.cn:8080/bd/member/index" width="120" height="38"></div>
+			</div>
+			<div class="layui-form-item form_code">
+				<input id="msg-code" class="layui-input" placeholder="请输入短信验证码" type="text" maxlength="6" lay-verify="required|number|msgcode">
+				<div class="code">
+					<a id="msg-btn" class="layui-btn layui-btn-normal tel-btn" style="width: 120px;">获取验证码</a>
+				</div>
+			</div>
+			<div class="layui-form-item" style="float: left;margin-left: 0px;">
+				<!-- <input lay-filter="agreen-checkbox" title="我同意" type="checkbox" lay-skin="primary" >
+				<a href="#" target="_blank">《注册协议》</a> -->
+			</div>
+			<div class="layui-form-item">
+				<button id="reg" type="submit" class="login_btn layui-btn layui-btn-radius layui-btn-normal" lay-submit="" lay-filter="register">立即注册</button>
+			</div>
+			<div>
+				<small class="text-white" style="color:#333">已经有账户了？</small>
+				<a href="javascript:void(0);" onclick="showBox()" style="color:cornflowerblue">点此登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="user" id="forget_box" style="display: none;">
+<div class="bg_color" onclick="deleteFilter()" id="bg_forget_filter" style="display: block;"></div>
+<div class="layui-clear register_main">
+	<div class="layui-logo">
+		
+	</div>
+	<fieldset class="layui-elem-field layui-field-title">
+		<legend class="text-white" style="color:#fac300; font-weight:bold; font-size:20px; border-bottom:1px solid  #ccc">找回密码</legend>
+	</fieldset>
+	<div class="layui-form layui-form-pane">
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<input class="layui-input" id="phone-forget" placeholder="请输入手机号" type="text" maxlength="11" lay-verify="required|phone_forget" autofocus="" autocomplete="off">
+			</div>
+			<div class="layui-form-item">
+				<input class="layui-input" id="password-forget" placeholder="请输入新密码,长度不小于8位" type="password" maxlength="20" lay-verify="required|pwd_forget" autocomplete="off">
+			</div>
+			<div class="layui-form-item">
+				<input class="layui-input" placeholder="请再次输入密码,长度不小于8位" id="password-forget-confirm" type="password" maxlength="20" lay-verify="required|rePwd_forget" autocomplete="off">
+			</div>
+			<div class="layui-form-item form_code">
+				<input id="code-forget" class="layui-input" placeholder="请输入图片验证码" type="text" maxlength="6" lay-verify="required">
+				<div class="code"><img id="refCode_forget_img" onclick="myForgetReload()" src="http://www.tjbda.cn:8080/bd/member/index" width="120" height="38"></div>
+			</div>
+			<div class="layui-form-item form_code">
+				<input id="msg-code-forget" class="layui-input" placeholder="请输入短信验证码" type="text" maxlength="6" lay-verify="required|number|msgcode_forget">
+				<div class="code">
+					<a id="msg-btn-forget" class="layui-btn layui-btn-normal tel-btn" style="width: 120px;">获取验证码</a>
+				</div>
+			</div>
+			<div class="layui-form-item" style="float: left;margin-left: 0px;">
+				<!-- <input lay-filter="agreen-checkbox" title="我同意" type="checkbox" lay-skin="primary" >
+				<a href="#" target="_blank">《注册协议》</a> -->
+			</div>
+			<div class="layui-form-item">
+				<button id="reg" type="submit" class="login_btn layui-btn layui-btn-radius layui-btn-normal" lay-submit="" lay-filter="forgetPassword">确定</button>
+			</div>
+			<div>
+				<small class="text-white" style="color:#333">已经有账户了？</small>
+				<a href="javascript:void(0);" onclick="showBox()" style="color:cornflowerblue">点此登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---footer e--->
+
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

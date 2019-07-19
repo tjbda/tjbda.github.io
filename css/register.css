@@ -1,0 +1,57 @@
+.user {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-color: write
+}
+
+.register_main {
+	width: 400px;
+	padding: 20px;
+	background-color:#FFF; border:1px solid #CCC;-webkit-box-shadow:1px 1px 3px #292929; -moz-box-shadow:1px 1px 3px #292929;
+	box-shadow: darkgrey 10px 10px 30px 5px;
+	border-radius: 4px;
+	position: fixed;
+	left: 45%;
+	top: 35%;
+	margin: -150px 0 0 -150px;
+	z-index: 9999;
+	text-align: center 
+}
+
+a {
+	color: mediumaquamarine;
+}
+
+a:hover {
+	color: aquamarine;
+}
+
+.code {
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.form_code {
+	position: relative;
+}
+
+.form_code .code {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.text-white {
+	color: whitesmoke;
+}
+
+.login_btn {
+	width: 100%;
+}

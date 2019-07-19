@@ -1,0 +1,94 @@
+.carousel_div1 {
+	background: url(../img/login-bg1.jpg) fixed center center
+}
+
+.carousel_div2 {
+	background: url(../img/login-bg2.jpg) fixed center center
+}
+
+.carousel_div3 {
+	background: url(../img/login-bg3.jpg) fixed center center
+}
+
+.bg_color {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.4) !important;
+    filter: alpha(opacity=40) !important;
+    position: fixed !important;
+    top: 0;
+    z-index: 9998;
+}
+
+.layer_notice {
+	background: #5fb878 none repeat scroll 0 0;
+	float: left;
+	height: 75px;
+	overflow: hidden;
+	padding: 10px;
+	width: 330px
+}
+
+.layer_notice ul li {
+	color: #fff
+}
+
+.video-player {
+	background-color: transparent;
+	min-width: 100%;
+	min-height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 9999;
+	top: 0
+}
+
+.video_mask {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9999;
+	background-color: write
+}
+
+.login {
+	/* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -200px;
+    z-index: 9999;  */
+	
+	width: 400px;
+	padding: 20px;
+	background-color:#FFF; border:1px solid #CCC;-webkit-box-shadow:1px 1px 3px #292929; -moz-box-shadow:1px 1px 3px #292929;
+box-shadow: darkgrey 10px 10px 30px 5px;
+	border-radius: 4px;
+	position: fixed;
+	left: 45%;
+	top: 35%;
+	margin: -150px 0 0 -150px;
+	z-index: 9999;
+	text-align: center 
+}
+
+.form_code {
+	position: relative
+}
+
+.form_code .code {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer
+}
+
+.login_btn {
+	width: 100%
+}
+
+.text-white {
+	color: whitesmoke; line-height:50px; 
+}

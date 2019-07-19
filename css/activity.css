@@ -1,0 +1,40 @@
+
+.news_title{
+    font-size:18px;
+    line-height:35px;
+    color:#000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.news_detail{
+    font-size:14px;
+    line-height:30px;
+    color:#666;
+}
+.color333{
+    color:#333;
+    font-weight: 600;
+}
+.bottombut-cur {
+    display: inline-block;
+    /* width: 80px; */
+    height: 38px;
+    text-align: center;
+    font: 15px/38px 'microsoft yahei';
+    border: 1px solid #e36c03;
+    background-color: #f37200;
+    color: #fff;
+    border-radius: 3px;
+    transition-duration: 0.2s;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
